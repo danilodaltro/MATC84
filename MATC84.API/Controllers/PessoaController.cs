@@ -35,8 +35,8 @@ namespace MATC84.API.Controllers
             }
         }
 
-        [HttpGet("id/{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
